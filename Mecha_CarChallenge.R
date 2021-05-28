@@ -25,3 +25,12 @@ total_summary <- coil_table%>%data.frame()%>%summarize(Mean=mean(PSI),Median=med
 #4 Create a lot_summary df  
 lot_summary <- coil_table%>%group_by(Manufacturing_Lot)%>%summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') 
 
+# Deliverable 3
+
+#1 RScript using t.test() to determine PSI (all lots)
+t.test(coil_table$PSI,mu=1500)
+
+#2 RScripts using t.test() & subset() for each lot
+t.test(subset(coil_table, Manufacturing_Lot=="Lot1")$PSI,mu=1500) 
+t.test(subset(coil_table, Manufacturing_Lot=="Lot2")$PSI,mu=1500)
+t.test(subset(coil_table, Manufacturing_Lot=="Lot3")$PSI,mu=1500)
