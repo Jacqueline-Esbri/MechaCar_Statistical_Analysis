@@ -17,13 +17,13 @@ The statistical summary output showed the following:
 1. The variables ground_clearance and vehicle_length (as well as the intercept) are statistically 
    **unlikely to provide random amounts of variance** to the linear model. In other words, these variables 
    have a significant impact on the miles per gallon on the MechaCar prototype. As indicated by the green arrows in the image above, 
-   a linear regression model run on these variables against figures for MPG, produced p-values of 2.60e-12 (2.6 X 10^-12) and 5.21e-08(5.21 X 10^-08).
+   a linear regression model run on these variables against figures for MPG, produced p-values of 2.60e-12 (2.6 X 10<sup>-12</sup>) and 5.21e-08 (5.21 X 10<sup>-08</sup>).
 
    Further, the intercept is also statistically significant, which could mean that the significant 
    features (ground clearance, vehicle length) may need to be transformed or adjusted to help 
    improve the predictive power of the model.
 
-2. The p-value of the linear model =5.35e-11(5.35 X 10^-11) (highlighted in in green box) is much smaller than the 
+2. The p-value of the linear model = 5.35e-11 (5.35 X 10<sup>-11</sup>) (highlighted in in green box) is much smaller than the 
    assumed significance level of 0.05%. Therefore, it can be stated that there is sufficient evidence 
    to **reject our null hypothesis**, which further indicates that the slope of this linear model is **not zero**.
 
