@@ -23,7 +23,7 @@ The statistical summary output showed the following:
    features (ground clearance, vehicle length) may need to be transformed or adjusted to help 
    improve the predictive power of the model.
 
-2. The p-value of the linear model is 5.35e-11(5.35 X 10^-11) (highlighted in in green box) is much smaller than the 
+2. The p-value of the linear model =5.35e-11(5.35 X 10^-11) (highlighted in in green box) is much smaller than the 
    assumed significance level of 0.05%. Therefore, it can be stated that there is sufficient evidence 
    to **reject our null hypothesis**, which further indicates that the slope of this linear model is **not zero**.
 
@@ -92,11 +92,13 @@ The focus of our test would be to evaluate MechaCar's city and highway fuel effi
 ### Null or Alternative Hypothesis
 
 Null Hypothesis: Mechacar prototypes' city and highway fuel efficiency is similar to the competitor's vehicle in the same class.
+
+
 Alternative Hypothesis: MechaCar prototypes' average city and highway fuel efficiency is statistically above or below the competitor's vehicles.
 
 ### Statistical Test Used for Hypothesis
 
-The best statistical test to test our hypothesis would be the two-sample t-test method. This t-test is widely used to test whether the unknown population means of two groups are equal or not. In addition, the ggplot2 library would be use to create a boxplot and show the potential spread between diffrent vehicles.
+The best statistical test to test our hypothesis would be the two-sample t-test method. This t-test is widely used to test whether the unknown population means of two groups are equal or not. In addition, the ggplot2 library would be used to create a boxplot and show the potential spread between diffrent vehicles.
 
 ### Data Needed to Run Statistical Test
  Fuel efficiency data from 25 to 40 individual cars would be a suitable choice to create a sample size of data for each car in the class type. 
