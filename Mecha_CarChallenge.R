@@ -14,6 +14,8 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle +
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
              ground_clearance + AWD, data=mpg_table))
 
+
+
 # Deliverable 2
 
 #2 Import and read the CSV file
@@ -24,6 +26,9 @@ total_summary <- coil_table%>%data.frame()%>%summarize(Mean=mean(PSI),Median=med
 
 #4 Create a lot_summary df  
 lot_summary <- coil_table%>%group_by(Manufacturing_Lot)%>%summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') 
+
+
+
 
 # Deliverable 3
 
