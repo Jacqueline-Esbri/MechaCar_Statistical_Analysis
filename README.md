@@ -17,13 +17,13 @@ The statistical summary output showed the following:
 1. The variables ground_clearance and vehicle_length (as well as the intercept) are statistically 
    **unlikely to provide random amounts of variance** to the linear model. In other words, these variables 
    have a significant impact on the miles per gallon on the MechaCar prototype. As indicated by the green arrows in the image above, 
-   a linear regression model run on these variables against figures for MPG, produced p-values of 2.6 X 10^{-12} and 5.21 X 10{-8}.
+   a linear regression model run on these variables against figures for MPG, produced p-values of 2.60e-12 (2.6 X 10^-12) and 5.21e-08(5.21 X 10^-08).
 
    Further, the intercept is also statistically significant, which could mean that the significant 
    features (ground clearance, vehicle length) may need to be transformed or adjusted to help 
    improve the predictive power of the model.
 
-2. The p-value of the linear model is 5.35 X 10^-11 (highlighted in in green box) is much smaller than the 
+2. The p-value of the linear model is 5.35e-11(5.35 X 10^-11) (highlighted in in green box) is much smaller than the 
    assumed significance level of 0.05%. Therefore, it can be stated that there is sufficient evidence 
    to **reject our null hypothesis**, which further indicates that the slope of this linear model is **not zero**.
 
@@ -60,22 +60,22 @@ The summary statistics dataframe showed the following:
 
 For the third deliverable, one-sample t-tests were performed to determine if all manufacturing lots and each lot individually were statistically different from the population mean of 1500 PSI. 
 
-All Lots
+#### All Lots
 
 ![all_lots.PNG](PNGs/all_lots.png)
 - The results of the T-test for the suspension coils for all manufacturing lots showed that they are not statistically different from the population mean of 1500 PSI. The p-value = 0.0603  (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
 
-Lot 1
+#### Lot 1
 
 ![lot_1.PNG](PNGs/lot_1.png)
 - The results of the T-test for the suspension coils for Lot 1 showed that they are not statistically different from the population mean of 1500 PSI. The p-value = 1 (highlighted in green box). A p-value generally is not found to be 1; however, when values on both groups are the same, the p-value becomes 1 (0.99). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
 
-Lot 2
+#### Lot 2
 
 ![lot_2.PNG](PNGs/lot_2.png)
 - The results of the T-test for the suspension coils for Lot 2 showed that they are not statistically different from the population mean of 1500 PSI. The p-value = 0.6072 (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
 
-Lot 3
+#### Lot 3
 
 ![lot_3.PNG](PNGs/lot_3.png)
 - The results of the T-test for the suspension coils for Lot 3 showed that **there is a slight statistically difference** from the population mean of 1500 PSI; however, the p-value = 0.04168 (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
@@ -91,8 +91,8 @@ The focus of our test would be to evaluate MechaCar's city and highway fuel effi
 
 ### Null or Alternative Hypothesis
 
-$H_{0}$: Mechacar prototypes' city and highway fuel efficiency is similar to the competitor's vehicle in the same class.
-$h_{a}$: MechaCar prototypes' average city and highway fuel efficiency is statistically above or below the competitor's vehicles.
+Null Hypothesis: Mechacar prototypes' city and highway fuel efficiency is similar to the competitor's vehicle in the same class.
+Alternative Hypothesis: MechaCar prototypes' average city and highway fuel efficiency is statistically above or below the competitor's vehicles.
 
 ### Statistical Test Used for Hypothesis
 
