@@ -23,19 +23,20 @@ The statistical summary output showed the following:
    features (ground clearance, vehicle length) may need to be transformed or adjusted to help 
    improve the predictive power of the model.
 
-2. The p-value of the linear model is 5.35 X 10^{-11} (highlighted in in green box) is much smaller than the 
+2. The p-value of the linear model is 5.35 X 10^-11 (highlighted in in green box) is much smaller than the 
    assumed significance level of 0.05%. Therefore, it can be stated that there is sufficient evidence 
    to **reject our null hypothesis**, which further indicates that the slope of this linear model is **not zero**.
 
 3. The r-squared value of this linear model is 0.7149 (highlighted in blue box), meaning that roughly 71% of all MPG 
    predictions will be correct when using this model. Therefore, we can conclude that this 
-   linear model predicts the mpg of MechaCar's  prototypes effectively.
+   linear model predicts the MPG of MechaCar's  prototypes effectively.
 
 
 ## Summary Statistics on Suspension Coils
 
-![total_summary.PNG](PNGs/total_summary.PNG)
-![lot_summary.PNG](PNGS/lot_summary.png)
+![total_summary.PNG](PNGs/total_summary.png)
+
+![lot_summary.PNG](PNGs/lot_summary.png)
 
 For the second deliverable, summary statistics was collected on the pounds per square inch (PSI) of 
 the suspension coils from the manufacturing lots.
@@ -57,21 +58,27 @@ The summary statistics dataframe showed the following:
 
 ## T-Tests on Suspension Coils
 
-For the third deliverable, one-sample t-tests were performed to determine if all manufacturing lots and each lot individually  
-were statistically different from the population mean of 1500 PSI. 
+For the third deliverable, one-sample t-tests were performed to determine if all manufacturing lots and each lot individually were statistically different from the population mean of 1500 PSI. 
 
 All Lots
+
 ![all_lots.PNG](PNGs/all_lots.png)
 - The results of the T-test for the suspension coils for all manufacturing lots showed that they are not statistically different from the population mean of 1500 PSI. The p-value = 0.0603  (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
 
+Lot 1
+
 ![lot_1.PNG](PNGs/lot_1.png)
-- The results of the T-test for the suspension coils for Lot 1 showed that they are not statistically different from the population mean of 1500 PSI. The p-value = 1 (highlighted in green box). A p-value generally is not found to be 1; however, when values on on both groups are the same, the p-value becomes 1 (0.99). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
+- The results of the T-test for the suspension coils for Lot 1 showed that they are not statistically different from the population mean of 1500 PSI. The p-value = 1 (highlighted in green box). A p-value generally is not found to be 1; however, when values on both groups are the same, the p-value becomes 1 (0.99). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
+
+Lot 2
 
 ![lot_2.PNG](PNGs/lot_2.png)
 - The results of the T-test for the suspension coils for Lot 2 showed that they are not statistically different from the population mean of 1500 PSI. The p-value = 0.6072 (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
 
+Lot 3
+
 ![lot_3.PNG](PNGs/lot_3.png)
-- The results of the T-test for the suspension coils for Lot 3 showed that **there is a slight statistically difference** from the population mean of 1500 PSI. However, the p-value = 0.6072 (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
+- The results of the T-test for the suspension coils for Lot 3 showed that **there is a slight statistically difference** from the population mean of 1500 PSI; however, the p-value = 0.04168 (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
 
 
 ## Study Design: MechaCar vs Competition
@@ -89,18 +96,9 @@ $h_{a}$: MechaCar prototypes' average city and highway fuel efficiency is statis
 
 ### Statistical Test Used for Hypothesis
 
-The best statistical test to test our hypothesis would be the two-sample t-test method. This t-test is widely used to test whether the unknown population means of two groups are equal or not. in addition, the ggplot2 library would be use to create a boxplot and show the potential spread between diffrent vehicles.
+The best statistical test to test our hypothesis would be the two-sample t-test method. This t-test is widely used to test whether the unknown population means of two groups are equal or not. In addition, the ggplot2 library would be use to create a boxplot and show the potential spread between diffrent vehicles.
 
 ### Data Needed to Run Statistical Test
  Fuel efficiency data from 25 to 40 individual cars would be a suitable choice to create a sample size of data for each car in the class type. 
 
 
-A CSV dataset containing miles-per-gallon (mpg) test results for 50 prototype vehicles was used for this part of the analysis. 
-To begin the R session, the CSV file was imported and read as a dataframe(df). Next, a multiple linear regression model was created 
-passing all six columns of the df using the lm() function, and adding the df as the data parameter. The output produced the coefficients 
-for each variable(columns) in the linear equation.
-
-![linearRegModel.PNG](PNGs/linearRegModel.png)
-
-
-The output from the linear regressionhe summary() function was used to obtain the statistical metrics of the linear model. These metrics show the overall model fit and statistical test for slope. In addition, it shows individual p-values, in order to see which variables provide significant contribution to the linear model. 
