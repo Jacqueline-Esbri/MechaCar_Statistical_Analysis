@@ -91,10 +91,10 @@ The focus of our test would be to evaluate MechaCar's city and highway fuel effi
 
 ### Null or Alternative Hypothesis
 
-Null Hypothesis: Mechacar prototypes' city and highway fuel efficiency is similar to the competitor's vehicle in the same class.
+H<sub>0</sub> : Mechacar prototypes' city and highway fuel efficiency is similar to the competitor's vehicle in the same class.
 
 
-Alternative Hypothesis: MechaCar prototypes' average city and highway fuel efficiency is statistically above or below the competitor's vehicles.
+H<sub>a</sub> : MechaCar prototypes' average city and highway fuel efficiency is statistically above or below the competitor's vehicles.
 
 ### Statistical Test Used for Hypothesis
 
