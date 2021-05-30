@@ -4,7 +4,9 @@
 
 ## Overview
 
-The purpose of this assignment was to analyze a series of datasets from the automotive industry. The goal was to apply an understanding of statistics and hypothesis testing. During the assignment, the data was extracted, transformed, and loaded (ETL). All of the statistical analysis and visualizations were written in R programming language using RStudio. The analysis includes visualizations, statistical tests, and interpretation of the results.
+The purpose of this assignment was to analyze a series of datasets from the automotive industry. The goal was to apply an understanding of statistics and hypothesis testing. Raw data stored in CSVs files was provided for the assignment. In order to effectively analyze the data, the ETL (Extract, Transform, and Load) process was followed.
+
+ All of the statistical analysis and visualizations were written in R programming language using RStudio. The analysis includes visualizations, statistical tests, and interpretation of the results.
 
 
 ## Linear Regression to Predict MPG
@@ -17,7 +19,7 @@ The statistical summary output showed the following:
 1. The variables ground_clearance and vehicle_length (as well as the intercept) are statistically 
    **unlikely to provide random amounts of variance** to the linear model. In other words, these variables 
    have a significant impact on the miles per gallon on the MechaCar prototype. As indicated by the green arrows in the image above, 
-   a linear regression model run on these variables against figures for MPG, produced p-values of 2.60e-12 (2.6 X 10<sup>-12</sup>) and 5.21e-08 (5.21 X 10<sup>-08</sup>).
+   a linear regression model run on these variables against figures for MPG returned p-values of 2.60e-12 (2.6 X 10<sup>-12</sup>) and 5.21e-08 (5.21 X 10<sup>-08</sup>).
 
    Further, the intercept is also statistically significant, which could mean that the significant 
    features (ground clearance, vehicle length) may need to be transformed or adjusted to help 
