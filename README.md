@@ -4,7 +4,7 @@
 
 ## Overview
 
-The purpose of this assignment was to analyze a series of datasets from the automotive industry. The goal was to apply an understanding of statistics and hypothesis testing. Raw data stored in CSVs files was provided for the assignment. In order to effectively analyze the data, the ETL (Extract, Transform, and Load) process was followed.
+The purpose of this assignment was to analyze a series of datasets from the automotive industry. The goal was to apply an understanding of statistics and hypothesis testing. Raw data stored in CSV files was provided for the assignment. In order to effectively analyze the data, the ETL (Extract, Transform, and Load) process was followed.
 
  All of the statistical analysis and visualizations were written in R programming language using RStudio. The analysis includes visualizations, statistical tests, and interpretation of the results.
 
