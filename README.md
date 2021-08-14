@@ -57,7 +57,6 @@ The summary statistics dataframe showed the following:
    is well above the specified threshold (170.29), which does not meet the the design specification.
 
 
-
 ## T-Tests on Suspension Coils
 
 For the third deliverable, one-sample t-tests were performed to determine if all manufacturing lots and each lot individually were statistically different from the population mean of 1500 PSI. 
@@ -80,16 +79,19 @@ For the third deliverable, one-sample t-tests were performed to determine if all
 #### Lot 3
 
 ![lot_3.PNG](PNGs/lot_3.png)
-- The results of the T-test for the suspension coils for Lot 3 showed that **there is a slight statistically difference** from the population mean of 1500 PSI; however, the p-value = 0.04168 (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
+- The results of the T-test for the suspension coils for Lot 3 showed that **there is a slight statistically difference** from the population mean of 1500 PSI. The p-value = 0.04168 (highlighted in green box). Assuming the significance level of 0.05%, it can be stated that there was **not sufficient evidence** to reject our null hypothesis.
+
 
 
 ## Study Design: MechaCar vs Competition
 
 When consumers evaluate the decision of purchasing a new car, there are many factors that they take into consideration. Depending on where the consumer lives (e.g., city or suburbs), they consider buying a car that serves their particular needs. If a consumer lives in the city, where ride-sharing services are abundant, they may look into buying an economical and reliable car to transport themselves instead of using public transportation. If they live in the suburbs, they may look for more features in a car to make their possible long trips more comfortable. At the end of the day, most consumers purchase a car based on practicality, and analyze the car from top to bottom to ensure it will be worth the investment.
 
+
 ### Metric to Test
 
 The focus of our test would be to evaluate MechaCar's city and highway fuel efficiency in comparison to various competitors' vehicles.
+
 
 ### Null or Alternative Hypothesis
 
@@ -98,11 +100,14 @@ H<sub>0</sub> : Mechacar prototypes' city and highway fuel efficiency is similar
 
 H<sub>a</sub> : MechaCar prototypes' average city and highway fuel efficiency is statistically above or below the competitor's vehicles.
 
+
 ### Statistical Test Used for Hypothesis
 
-The best statistical test to test our hypothesis would be the two-sample t-test method. This t-test is widely used to test whether the unknown population means of two groups are equal or not. In addition, the ggplot2 library would be used to create a boxplot and show the potential spread between diffrent vehicles.
+The best statistical test to test our hypothesis would be the two-sample t-test method. This t-test is widely used to test whether the unknown population means of two groups are equal or not. In addition, the ggplot2 library would be used to create a boxplot and show the potential spread between different vehicles.
+
 
 ### Data Needed to Run Statistical Test
+
  Fuel efficiency data from 25 to 40 individual cars would be a suitable choice to create a sample size of data for each car in the class type. 
 
 
